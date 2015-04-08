@@ -26,7 +26,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/logged_username">
+        android:layout_below="@+id/logged_username"
+        android:id="@+id/scrollView">
 
         <TableLayout
             android:layout_width="fill_parent"
@@ -37,4 +38,14 @@
             android:orientation="horizontal"
             android:id="@+id/timeline_layout"></TableLayout>
     </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Tweets"
+        android:id="@+id/send_tweets_button"
+        android:layout_above="@+id/scrollView"
+        android:layout_alignRight="@+id/scrollView"
+        android:layout_alignEnd="@+id/scrollView"
+        android:enabled="false"/>
 </RelativeLayout>
